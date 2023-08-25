@@ -11,7 +11,8 @@ package com.pages;
 		private By emailId = By.id("email");
 		private By password = By.id("passwd");
 		private By signInButton = By.id("SubmitLogin");
-		private By forgotPwdLink = By.linkText("Forgot your password?");
+		//private By forgotPwdLink = By.linkText("Forgot your password?");
+		private By forgotPwdLink = By.xpath("//a[text()='Forgot your password?']");
 
 		// 2. Constructor of the page class:
 		public LoginPage(WebDriver driver) {
